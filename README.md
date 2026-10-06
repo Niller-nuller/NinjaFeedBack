@@ -42,17 +42,16 @@ Hvilket event bruger I, og hvornår bliver det udsendt?
 
  
 
-Test 
+Test
 
-Beskriv kort: 
+Vi tested en ting afgangen med at prøve at få projektet til at give en best case secnario, vi startede med server start, hvad sker der når et endpoint ikke eskistere og hvad sker der når et gør.
+Også videre til readfile, hvor vi så har tested hvad sker der når filen ikke kan findes og om den smider en ordenligt error og sender en besked til klienten, hvad sker der når en fil kan læses.
+Vi anvdente en test metode og en test txt som er slettet fra programmet efter den ikke skulle bruges mere.
 
-hvordan I testede succes
+Vi har tested write både med hvad sker der når den ikke kan finde filen den skal write til, hvad sker der når en bruger ikke indsender noget, hvad sker der når brugeren sender noget og den kan finde filen.
 
-hvordan I fremkaldte en fejl
+Så sluttede vi af med Event Emitter, hvor vi testede alle de tidligere ting.
 
-hvordan I testede flere requests
-
- 
 
 AI-brug 
 
