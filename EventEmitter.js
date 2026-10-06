@@ -8,7 +8,8 @@ const logger = new EventEmitter();
 const Logging = fs.createWriteStream('requests.log', {flags: 'a'});
 
 async function write(line) {
-    const full = `${new Date().toISOString()}-${line}`;
+    const date = new Date();
+    const full = `${date.getFullYear()}-${date.getMonth()+1}-${date.getDay()}-${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}-${line}`;
     console.log(full);
     Logging.write(full + '\n');
 }
