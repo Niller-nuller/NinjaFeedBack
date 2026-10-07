@@ -46,6 +46,7 @@ app.post('/writefile', async (req, res) => {
         const jsonInput = req.body.jsonInput;
         if(!jsonInput){
             res.status(200).send('You cannot send nothing');
+            return;
         }
         await writeToSpecificFile(jsonInput);
         res.status(200).send('Message saved');

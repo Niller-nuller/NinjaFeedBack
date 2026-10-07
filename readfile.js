@@ -1,9 +1,10 @@
 const path = require('node:path');
-const fs = require('node:fs');
+const fs = require('node:fs/promises');
 const readFilePath = path.join(__dirname, '/data/defaultwrite.txt');
+
 async function readFromFile() {
-    let files = fs.readFileSync(readFilePath, 'utf8');
-    return files;
+    return fs.readFile(readFilePath, 'utf8');
+
 }
 module.exports =  {
     readFromFile
